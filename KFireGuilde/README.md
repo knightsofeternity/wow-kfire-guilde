@@ -62,5 +62,5 @@ Banc hors jeu : plusieurs joueurs simulés sur un même canal de guilde, avec le
 Depuis la racine du dépôt :
 
 ```bash
-docker run --rm -v "$PWD/wow-addon":/w -w /w alpine:3.20 sh -c "apk add -q lua5.1 >/dev/null 2>&1 && lua5.1 test/guilde.lua"
+docker run --rm -v "$PWD":/w -w /w alpine:3.20 sh -c "apk add -q lua5.1 >/dev/null 2>&1 && lua5.1 test/guilde.lua"
 ```
